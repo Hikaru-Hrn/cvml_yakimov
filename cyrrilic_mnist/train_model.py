@@ -140,11 +140,3 @@ def learn():
                 test_correct += (t_out.argmax(1) == t_lbls).sum().item()
 
         test_acc = 100 * test_correct / len(test_set)
-        print(f"Epoch {epoch + 1} | Train Acc: {acc:.2f}% | Test Acc: {test_acc:.2f}%")
-
-    torch.save(model.state_dict(), "model.pth")
-    return model
-
-
-if __name__ == "__main__":
-    model = learn()
