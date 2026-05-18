@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import torch
-from dec_enc import Decoder, Encoder, ImageDataset
+from train import Decoder, Encoder, ImageDataset
 
 encoder = Encoder()
 decoder = Decoder()
